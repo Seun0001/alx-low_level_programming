@@ -1,19 +1,19 @@
-
-
 #include "main.h"
 
 /**
- *_puts - prints a string
- * @str: string to print
+ * _puts - function that prints a string, followed by a new line
  *
- * Description: prints a string
- * On success: return the number of characters printed
+ * @str: the variable pointer at str
+ *
  */
 
 void _puts(char *str)
 {
-while (*str)
-_putchar(*str++);
+int i;
 
+for (i = 0; str[i] != '\0' ; i++)
+{
+_putchar(str[i]);
+}
 _putchar('\n');
 }
