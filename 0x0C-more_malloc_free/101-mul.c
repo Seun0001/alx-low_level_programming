@@ -2,13 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *int_calloc(int nmemb, unsigned int size)
-void mult(int *product, char *n1, char *n2, int len1, int len2)
-int is_valid(char *num)
-void err(int status)
-int main(int argc, char **argv)
-
-
 /**
   * int_calloc - special calloc but 4 int arrays
   * @nmemb: n memb
@@ -67,7 +60,7 @@ void mult(int *product, char *n1, char *n2, int len1, int len2)
 	{}
 	if (i == len1 + len2)
 		_putchar('0');
-	for (; i < len1 + len2; i++)
+	for (i = 0; i < len1 + len2; i++)
 		_putchar(product[i] + '0');
 	_putchar('\n');
 }
@@ -75,7 +68,7 @@ void mult(int *product, char *n1, char *n2, int len1, int len2)
 /**
   * is_valid - is the number a valid one
   * @num : char string num
-  * Return: int, 1 if true 0 if false
+  * Return: int 1 if true 0 if false
   */
 int is_valid(char *num)
 {
