@@ -21,7 +21,6 @@ int *int_calloc(int nmemb, unsigned int size)
 	/* calloc */
 	for (n = 0; n < nmemb; n++)
 		p[n] = 0;
-	exit (98);
 	return (p);
 }
 
