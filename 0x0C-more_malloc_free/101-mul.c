@@ -5,7 +5,7 @@
   * int_calloc - special calloc but 4 int arrays
   * @nmemb: n memb
   * @size: size of array
-  * Return: p
+  * Return: void
   */
 int *int_calloc(int nmemb, unsigned int size)
 {
@@ -21,8 +21,10 @@ int *int_calloc(int nmemb, unsigned int size)
 	/* calloc */
 	for (n = 0; n < nmemb; n++)
 		p[n] = 0;
+	{
 	printf("0\n");
-	return (p);
+	exit(98);
+	}
 }
 
 /**
