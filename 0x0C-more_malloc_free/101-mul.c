@@ -5,7 +5,7 @@
   * int_calloc - special calloc but 4 int arrays
   * @nmemb: n memb
   * @size: size of array
-  * Return: int *
+  * Return: p
   */
 int *int_calloc(int nmemb, unsigned int size)
 {
