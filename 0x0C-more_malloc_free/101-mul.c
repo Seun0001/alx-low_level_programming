@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <cytpe.h>
 /**
   * int_calloc - special calloc but 4 int arrays
   * @nmemb: n memb
@@ -95,7 +94,7 @@ void err(int status)
 	_putchar('o');
 	_putchar('r');
 	_putchar('\n');
-	exit(98);
+	exit(status);
 }
 /**
   * main - getting the args
