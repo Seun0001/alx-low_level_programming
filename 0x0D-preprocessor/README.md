@@ -63,7 +63,11 @@ mandatory
 ♦ Write a program that prints the name of the file it was compiled from, followed by a new line.
 
 You are allowed to use the standard library
+
+julien@ubuntu:~/0x0c. macro, structures$ ./c 
+2-main.c
 julien@ubuntu:~/0x0c. macro, structures$ cp 2-main.c 02-main.c
+julien@ubuntu:~/0x0c. macro, structures$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 02-main.c -o cc
 julien@ubuntu:~/0x0c. macro, structures$ ./cc
 02-main.c
 
