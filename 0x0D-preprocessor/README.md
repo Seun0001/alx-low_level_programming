@@ -42,6 +42,7 @@ julien@ubuntu:~/0x0c. macro, structures$ cat 1-main.c
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
     float a;
