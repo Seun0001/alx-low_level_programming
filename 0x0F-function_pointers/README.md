@@ -56,11 +56,7 @@ int main(void)
     print_name("Bob Dylan", print_name_uppercase);
     printf("\n");
     return (0);
-}
-julien@ubuntu:~/0x0e. Function pointers$ ./a 
-Hello, my name is Bob
-Hello, my uppercase name is BOB DYLAN
-julien@ubuntu:~/0x0e. Function pointers$ 
+} 
 
 ♦ 1. If you spend too much time thinking about a thing, you'll never get it done
 mandatory
@@ -107,19 +103,7 @@ int main(void)
     array_iterator(array, 5, &print_elem);
     array_iterator(array, 5, &print_elem_hex);
     return (0);
-}
-julien@ubuntu:~/0x0e. Function pointers$ ./b 
-0
-98
-402
-1024
-4096
-0x0
-0x62
-0x192
-0x400
-0x1000
-julien@ubuntu:~//0x0e. Function pointers$ 
+} 
 
 ♦ 2. To hell with circumstances; I create opportunities
 mandatory
@@ -187,11 +171,6 @@ int main(void)
     printf("%d\n", index);
     return (0);
 }
-julien@ubuntu:~/0x0e. Function pointers$ ./c
-2
-1
-2
-julien@ubuntu:~/0x0e. Function pointers$
 
 ♦ 3. A goal is not always meant to be reached, it often serves simply as something to aim at
 mandatory
@@ -274,22 +253,6 @@ You are not allowed to use any kind of loop
 You are allowed to use a maximum of 3 if statements
 Compilation and examples
 
-julien@ubuntu:~/0x0e. Function pointers$ ./calc 1 + 1
-2
-julien@ubuntu:~/0x0e. Function pointers$ ./calc 97 + 1
-98
-julien@ubuntu:~/0x0e. Function pointers$ ./calc 1024 / 10
-102
-julien@ubuntu:~/0x0e. Function pointers$ ./calc 1024 '*' 98
-100352
-julien@ubuntu:~/0x0e. Function pointers$ ./calc 1024 '\*' 98
-Error
-julien@ubuntu:~/0x0e. Function pointers$ ./calc 1024 - 98
-926
-julien@ubuntu:~/0x0e. Function pointers$ ./calc 1024 '%' 98
-44
-julien@ubuntu:~/0x0e. Function pointers$
-
 ♦ 4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker
 #advanced
 Write a program that prints the opcodes of its own main function.
@@ -307,12 +270,6 @@ If the number of bytes is negative, print Error, followed by a new line, and exi
 You do not have to compile with any flags
 Note: if you want to translate your opcodes to assembly instructions, you can use, for instance udcli.
 
-julien@ubuntu:~/0x0e. Function pointers$ gcc -std=gnu89 100-main_opcodes.c -o main
-julien@ubuntu:~/0x0e. Function pointers$ ./main 21
-55 48 89 e5 48 83 ec 30 89 7d dc 48 89 75 d0 83 7d dc 02 74 14
-julien@ubuntu:~/0x0e. Function pointers$ objdump -d -j.text -M intel main
-[...]
-00000000004005f6 <main>:
   4005f6:   55                      push   rbp
   4005f7:   48 89 e5                mov    rbp,rsp
   4005fa:   48 83 ec 30             sub    rsp,0x30
