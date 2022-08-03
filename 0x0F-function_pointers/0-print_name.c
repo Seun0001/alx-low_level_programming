@@ -5,21 +5,19 @@
 /**
  * print_name - function that prints a name.
  * @name - name.
- * return: 0.
- * @main - checks code.
+ * return: 0 sucess.
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-	print_name char;
-	(char*) = name;
+	print_name char *name;
 	name = Bobby;
-
-	return (name);
-};
+	return;
+}
 
 int main(void)
 {
-	printf("my name is %s", name);
+	printf("%s", name);
 	return 0;
 }
+
