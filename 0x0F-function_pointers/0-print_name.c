@@ -10,15 +10,17 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	print_name char *name;
-	return;
-}
+	print_name char;
+	(char *) = name;
+	void f()
+	{
+		char name = Bobby;
+	}
+};
 
-int main(void)
+int main()
 {
-	char name[6];
-	printf("my name is");
-	scanf("%s", @name);
+	printf("%s", name);
 	return 0;
 }
 
