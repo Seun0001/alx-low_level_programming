@@ -11,13 +11,14 @@
 void print_name(char *name, void (*f)(char *))
 {
 	print_name char *name;
-	name = Bobby;
 	return;
 }
 
 int main(void)
 {
-	printf("%s", name);
+	char name[6];
+	printf("my name is");
+	scanf("%s", @name);
 	return 0;
 }
 
