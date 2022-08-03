@@ -10,17 +10,12 @@
 
 void print_name(char *name, void (*f)(char *))
 {
-	print_name char;
-	(char *) = name;
-	void f()
+	void f(char *name)
 	{
-		char name = Bobby;
+		char *name = Bobby;
 	}
 };
-
 int main()
 {
 	printf("%s", name);
-	return 0;
 }
-
