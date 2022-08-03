@@ -13,7 +13,7 @@ void print_name(char *name, void (*f)(char *))
 	print_name char;
 	(char*) = name;
 	name = Bobby;
-	printf("may name is %s", name);
+	print_name("may name is %s", name);
 
 	return (name);
 };
