@@ -6,6 +6,7 @@
  * print_name - function that prints a name.
  * @name - name.
  * return: 0.
+ * @main - checks code.
  */
 
 void print_name(char *name, void (*f)(char *))
@@ -19,7 +20,6 @@ void print_name(char *name, void (*f)(char *))
 
 int main(void)
 {
-	printf("my name is");
-	scanf("%s", @name);
+	printf("my name is %s", name);
 	return 0;
 }
