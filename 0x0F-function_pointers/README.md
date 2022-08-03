@@ -278,15 +278,6 @@ Note: if you want to translate your opcodes to assembly instructions, you can us
   400605:   83 7d dc 02             cmp    DWORD PTR [rbp-0x24],0x2
   400609:   74 14                   je     40061f <main+0x29>
 [...]
-julien@ubuntu:~/0x0e. Function pointers$ ./main 21 | udcli -64 -x -o 4005f6
-00000000004005f6 55               push rbp
-00000000004005f7 4889e5           mov rbp, rsp
-00000000004005fa 4883ec30         sub rsp, 0x30
-00000000004005fe 897ddc           mov [rbp-0x24], edi
-0000000000400601 488975d0         mov [rbp-0x30], rsi
-0000000000400605 837ddc02         cmp dword [rbp-0x24], 0x2
-0000000000400609 7414             jz 0x40061f
-julien@ubuntu:~/0x0e. Function pointers$
 Note 0: je is equivalent to jz
 Note 1: depending on how you write your main function, and on which machine you compile your program, the opcodes (and by extension the assembly code) might be different than the above example
 Repo:
