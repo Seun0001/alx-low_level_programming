@@ -1,7 +1,7 @@
 # 0x18. C - Dynamic libraries
 ### C
 
-##**Tasks**##
+##**Tasks**
 ___
  __0. A library is not a luxury but one of the necessities of life__
 ___
